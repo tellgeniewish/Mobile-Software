@@ -1,0 +1,68 @@
+※ 아래의 범위에서 이론 문제 및 프로그래밍 관련 문제 출제 (10문제 내외)
+- 프로그래밍 문제는 빈 칸 채우기 형식으로 출제
+
+어떤 클래스 쓰이는지
+문법!!!
+
+1. 안드로이드 앱의 주요 구성요소와 응용 프로그램 구성 (01주차 - 안드로이드개요)
+액티비티: 화면 제어
+서비스: 백그라운드 동작
+BR: 방송 수신 및 대기
+컨텐츠 제공자: 데이터 외부 공개
++메시징 메커니즘: 인텐트
+
+2. 코틀린의 기본 문법 (02주차 - Kotlin기초 01)
+
+3. 코틀린 클래스의 생성자 및 상속 (03주차 - Kotlin기초 02)
+open 써야 상속 ㄱㄴ
+인터페이스는 open 없어도 ㄱㅊ
+
+data 클래스: toStiring()이랑 equals()
+// data 생략하고 class 생성하면
+    // toString 기본 기능이 실행 -> 객체의 아이디
+    // equals 기본 기능이 실행 -> 객체의 아이디 비교
+return this.title == (other as subject).title // 다운 캐스팅 해줘야 함
+
+4. object 클래스의 생성 및 사용 (03주차 - Kotlin기초 02)
+익명 클래스
+
+5. 람다 함수 표현법 (03주차 - Kotlin기초 02)
+val lambdaNoParam = { println("lambda!!!") } // 매개 변수가 없어서 -> 생략한 람다 함수
+    // { -> println("lambda!!!")}
+    // val lambdaNoParam : () -> Unit = { println("lambda!!!") }
+    // val lambdaNoParam : (Unit) -> Unit = { println("lambda!!!") }
+    lambdaNoParam()
+
+6. 널 안전성 관련 연산자의 사용 (03주차 - Kotlin기초 02)
+Nothing
+val age = readLine()!!.toInt()
+?
+str.length ?: 0
+
+7. 안드로이드 애플리케이션 프로젝트의 구조 및 프로젝트 요소 (01주차 강의자료 -안드로이드앱기초)
+AndroidManifest.xml: 앱 구성 정보
+MainActivity.kt: 기능 구현
+activity_main.xml: 화면 설계
+build.gradle: 빌드 설정
+
+정적인 레이아웃은 XML로, 동적인 레이아웃은 코드로!
+
+8. 기본 위젯 사용법 (04주차 - 안드로이드인터페이스기초)
+
+9. 레이아웃 속성, 리소스 작성 시의 주의 사항 (05주차 - 레이아웃)
+
+10. 뷰바인딩의 구성 방법 (05주차 - 레이아웃)
+viewBinding {
+	enable=true
+}
+
+val mainBinding: ActivityMainBinding by lazy {
+	ActivityMainBinding.inflate(layoutInflator)
+}
+
+setContentView(mainBinding.root)
+
+11. 커스텀 뷰의 구현 및 그리기 구현 (05주차 - 커스텀뷰및토스트)
+
+12. 이벤트 핸들러의 다양한 구현 방법 (06주차 - 안드로이드이벤트처리)
+

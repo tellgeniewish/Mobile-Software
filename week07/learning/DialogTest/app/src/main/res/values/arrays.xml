@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="foods"> <!-- foods라는 배열을 만듦 -->
+        <item>불고기</item>
+        <item>돼지국밥</item>
+        <item>감자탕</item>
+    </string-array>
+</resources>

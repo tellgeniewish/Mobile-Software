@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/China"
+        android:title="중식" >
+        <menu >
+            <item
+                android:id="@+id/SubItem01"
+                android:title="짜장면" />
+            <item
+                android:id="@+id/SubItem02"
+                android:title="짬뽕" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/Korea"
+        android:title="한식" >
+        <menu >
+            <item
+                android:id="@+id/SubItem03"
+                android:title="김치찌개" />
+            <item
+                android:id="@+id/SubItem04"
+                android:title="순두부찌개" />
+        </menu>
+    </item>
+</menu>
